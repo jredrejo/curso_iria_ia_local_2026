@@ -705,6 +705,28 @@
             .cover .tags .chip span {
                 color: var(--amber);
             }
+            .cover .coverlink {
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 30px;
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 25px;
+                color: var(--cyan);
+                text-decoration: none;
+                border: 1px solid rgba(73, 211, 255, 0.35);
+                border-radius: 9px;
+                padding: 12px 22px;
+                transition: all 0.15s ease;
+            }
+            .cover .coverlink::before {
+                content: "↗";
+                color: var(--amber);
+            }
+            .cover .coverlink:hover {
+                color: var(--lime);
+                border-color: var(--lime);
+            }
             .cover .foot {
                 display: flex;
                 justify-content: space-between;
@@ -1200,8 +1222,16 @@
                             <span class="chip"><span>#</span> coste cero</span>
                             <span class="chip"><span>#</span> offline</span>
                         </div>
+                        <a
+                            class="coverlink reveal"
+                            style="--i: 3"
+                            href="https://jredrejo.github.io/curso_iria_ia_local_2026/"
+                            target="_blank"
+                            rel="noopener"
+                            >jredrejo.github.io/curso_iria_ia_local_2026</a
+                        >
                     </div>
-                    <div class="foot reveal" style="--i: 3">
+                    <div class="foot reveal" style="--i: 4">
                         <div>
                             <b>Workshop</b> · IRIA, Almendralejo<br />25 · jun ·
                             2026
