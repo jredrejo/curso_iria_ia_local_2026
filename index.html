@@ -1176,6 +1176,74 @@
                     transform: none !important;
                 }
             }
+
+            /* === AVISO GIRAR MÓVIL (solo en vertical y pantallas pequeñas) === */
+            #rotate {
+                position: fixed;
+                inset: 0;
+                z-index: 300;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 26px;
+                text-align: center;
+                padding: 40px;
+                background: radial-gradient(
+                        900px 600px at 70% 20%,
+                        rgba(255, 176, 0, 0.1),
+                        transparent 60%
+                    ),
+                    #07080a;
+                color: #e9edf0;
+                font-family: "IBM Plex Mono", monospace;
+            }
+            #rotate .ph {
+                font-size: 78px;
+                line-height: 1;
+                animation: rotptr 2.6s ease-in-out infinite;
+            }
+            #rotate h3 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            #rotate h3 b {
+                color: #ffb000;
+            }
+            #rotate p {
+                font-size: 16px;
+                color: #aeb6bf;
+                max-width: 320px;
+                line-height: 1.55;
+            }
+            #rotate button {
+                margin-top: 6px;
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 15px;
+                color: #49d3ff;
+                background: none;
+                border: 1px solid rgba(73, 211, 255, 0.4);
+                border-radius: 8px;
+                padding: 11px 20px;
+            }
+            @keyframes rotptr {
+                0%,
+                35% {
+                    transform: rotate(0);
+                }
+                55%,
+                100% {
+                    transform: rotate(-90deg);
+                }
+            }
+            @media (max-width: 860px) and (orientation: portrait) {
+                #rotate {
+                    display: flex;
+                }
+                body.force-show #rotate {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -4612,6 +4680,19 @@ cmake <span class="k">--build</span> build <span class="k">-j</span>$(nproc)</pr
             ← → navegar · O índice · F pantalla completa · E editar
         </div>
 
+        <!-- aviso para girar el móvil (solo en vertical) -->
+        <div id="rotate">
+            <div class="ph">📱</div>
+            <h3>Gira el teléfono a <b>horizontal</b></h3>
+            <p>
+                La presentación es 16:9 y se ve a pantalla completa en
+                horizontal. En vertical queda diminuta.
+            </p>
+            <button onclick="document.body.classList.add('force-show')">
+                verla igualmente →
+            </button>
+        </div>
+
         <script>
             /* ============================================================
    NAVEGACIÓN + ESCALADO + EDICIÓN
@@ -4633,6 +4714,11 @@ cmake <span class="k">--build</span> build <span class="k">-j</span>$(nproc)</pr
                     stage.style.transform = "scale(" + k + ")";
                 }
                 addEventListener("resize", fit);
+                addEventListener("orientationchange", () =>
+                    setTimeout(fit, 120),
+                );
+                if (window.visualViewport)
+                    visualViewport.addEventListener("resize", fit);
                 fit();
 
                 function show(n) {
