@@ -1,0 +1,39 @@
+indice.md es el guión de un curso que he preparado para enseñar IA en modo local.
+
+diapositivas.md es un texto en formato markdown para hacer el listado de diapositivas para una presentación. Cada diapositiva debe tener un título, contenido, enlaces e imágenes a insertar
+
+Al final de indice.md hay un listado de enlaces correspondientes a cada uno de los puntos del guión. En esos enlaces hay información que puede ir en las diapositivas. Especialmente importante si puedes extraer tablas o gráficos que puedan ser útiles. En el texto puedes dejar el enlace al gráfico si es posible, o la propia tabla si son tablas.
+También hay  imágenes que pueden ser útiles.
+
+
+Necesito hacer una presentación para este workshop: https://iriavr.es/actividades/workshop-monta-tu-ia-local .  mi nombre es José L. Redrejo Rodríguez.
+
+En medio del workshop voy a hacer estas prácticas:
+⏱️ Bloque 1 (30 min): Motivación + "Siente la diferencia"
+- Teoría: Por qué local (5 min)
+- Práctica: Instalan LM Studio, descargan Phi-3-mini, hacen su primera pregunta (20 min)
+- Demo: Tú muestras el mismo prompt en el servidor L40S con un modelo grande → contraste velocidad/calidad (5 min)
+
+⏱️ Bloque 2 (45 min): RAG — "Dale documentos a tu IA"
+- Teoría: Qué es RAG, por qué importa (10 min)
+- Práctica: LM Studio tiene RAG integrado (cargan un PDF, hacen preguntas sobre él) (25 min)
+- Demo: Muestras AnythingLLM o un RAG en el servidor con un modelo grande para ver la diferencia (10 min)
+
+⏱️ Bloque 3 (45 min): Agentes y herramientas — "La IA que hace cosas"
+- Teoría: Agentes, MCP, skills (10 min)
+1. Instalar OpenCode en sus PCs Windows (o en el servidor Linux y conectarse por SSH desde Windows)
+2. Conectarlo a diferentes "cerebros":
+   - Ollama en el servidor L40S (modelo 7B-14B)
+   - LM Studio local (Phi-3-mini, CPU)
+   - vLLM en el servidor
+
+⏱️ Bloque 4 (30 min): Montar tu propio asistente + Conclusión
+- Práctica: Configuran Open WebUI en el servidor, cada alumno se conecta desde su navegador (15 min)
+- Cierre: Benchmark comparativo rápido (qué modelo usaron, qué les pareció) (10 min)
+- Q&A (5 min)
+
+
+necesito que:
+1. retoques diapositivas.md para que incluyan los enlaces a las url que sean útiles
+2. prepares una presentación basada en diapositvas.md en google drive para este workshop. Elige el tema y estilo que encaje mejor.
+Al final de la presentación añadiré 4 guías detalladas para las prácticas de cada bloque
