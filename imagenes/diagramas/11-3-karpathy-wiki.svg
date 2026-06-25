@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="420" fill="#0a1626"/>
+  <text x="450" y="46" fill="#ffffff" font-size="27" font-weight="bold" text-anchor="middle">La LLM Wiki de Karpathy (3 capas)</text>
+
+  <defs>
+    <marker id="aw" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#5fb3ff"/>
+    </marker>
+  </defs>
+
+  <g text-anchor="middle" font-size="16">
+    <rect x="40"  y="150" width="220" height="120" rx="12" fill="#3b82f6"/>
+    <text x="150" y="200" fill="#fff" font-size="19" font-weight="bold">/raw/</text>
+    <text x="150" y="226" fill="#cfe3ff">fuentes inmutables</text>
+    <text x="150" y="248" fill="#cfe3ff">PDFs · artículos · notas</text>
+
+    <rect x="340" y="150" width="220" height="120" rx="12" fill="#f59e0b"/>
+    <text x="450" y="200" fill="#1a1100" font-size="19" font-weight="bold">Schema (CLAUDE.md)</text>
+    <text x="450" y="226" fill="#3a2900">reglas y convenciones</text>
+    <text x="450" y="248" fill="#3a2900">de cómo construir la wiki</text>
+
+    <rect x="640" y="150" width="220" height="120" rx="12" fill="#22c55e"/>
+    <text x="750" y="195" fill="#06210f" font-size="19" font-weight="bold">Wiki generada</text>
+    <text x="750" y="221" fill="#06210f">resúmenes · entidades</text>
+    <text x="750" y="243" fill="#06210f">backlinks (Markdown)</text>
+  </g>
+
+  <g stroke="#5fb3ff" stroke-width="3" marker-end="url(#aw)">
+    <line x1="260" y1="210" x2="335" y2="210"/>
+    <line x1="560" y1="210" x2="635" y2="210"/>
+  </g>
+
+  <text x="450" y="330" fill="#9bb4d0" font-size="16" text-anchor="middle">Operaciones: Ingest (añadir) · Query (buscar) · Lint (arreglar enlaces/datos obsoletos)</text>
+  <text x="450" y="372" fill="#5fb3ff" font-size="17" font-style="italic" text-anchor="middle">"La IA compila el territorio; tú aún tienes que recorrerlo"</text>
+</svg>

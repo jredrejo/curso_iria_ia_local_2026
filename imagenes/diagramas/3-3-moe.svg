@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="480" fill="#0a1626"/>
+  <text x="450" y="48" fill="#ffffff" font-size="28" font-weight="bold" text-anchor="middle">MoE — Mixture of Experts</text>
+  <text x="450" y="78" fill="#5fb3ff" font-size="17" text-anchor="middle">Rinde como un modelo grande, consume como uno pequeño</text>
+
+  <!-- token -->
+  <rect x="60" y="200" width="130" height="60" rx="10" fill="#3b82f6"/>
+  <text x="125" y="237" fill="#fff" font-size="18" text-anchor="middle">Token</text>
+
+  <!-- router -->
+  <rect x="290" y="190" width="150" height="80" rx="10" fill="#f59e0b"/>
+  <text x="365" y="226" fill="#1a1100" font-size="18" font-weight="bold" text-anchor="middle">Router</text>
+  <text x="365" y="250" fill="#1a1100" font-size="13" text-anchor="middle">elige expertos</text>
+
+  <line x1="190" y1="230" x2="290" y2="230" stroke="#5fb3ff" stroke-width="3"/>
+
+  <!-- expertos -->
+  <g text-anchor="middle" font-size="15">
+    <rect x="560" y="60"  width="160" height="55" rx="8" fill="#22c55e"/>
+    <text x="640" y="94" fill="#06210f">Experto 1 ✓</text>
+    <rect x="560" y="130" width="160" height="55" rx="8" fill="#1f3a52"/>
+    <text x="640" y="164" fill="#7e98b4">Experto 2</text>
+    <rect x="560" y="200" width="160" height="55" rx="8" fill="#22c55e"/>
+    <text x="640" y="234" fill="#06210f">Experto 3 ✓</text>
+    <rect x="560" y="270" width="160" height="55" rx="8" fill="#1f3a52"/>
+    <text x="640" y="304" fill="#7e98b4">Experto 4</text>
+    <rect x="560" y="340" width="160" height="55" rx="8" fill="#1f3a52"/>
+    <text x="640" y="374" fill="#7e98b4">Experto N</text>
+  </g>
+
+  <!-- conexiones router -> expertos activos -->
+  <line x1="440" y1="230" x2="560" y2="88"  stroke="#22c55e" stroke-width="3"/>
+  <line x1="440" y1="230" x2="560" y2="228" stroke="#22c55e" stroke-width="3"/>
+  <line x1="440" y1="230" x2="560" y2="158" stroke="#33506e" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="440" y1="230" x2="560" y2="298" stroke="#33506e" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="440" y1="230" x2="560" y2="368" stroke="#33506e" stroke-width="1.5" stroke-dasharray="5"/>
+
+  <text x="450" y="445" fill="#9bb4d0" font-size="16" text-anchor="middle">Ej.: 35B totales, solo ~3B activos por token  →  "A3B"</text>
+</svg>

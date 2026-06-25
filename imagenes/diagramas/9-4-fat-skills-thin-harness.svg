@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="820" height="430" fill="#0a1626"/>
+  <text x="410" y="46" fill="#ffffff" font-size="27" font-weight="bold" text-anchor="middle">Fat Skills + Thin Harness</text>
+
+  <!-- harness -->
+  <rect x="120" y="90" width="580" height="70" rx="12" fill="#0ea5e9"/>
+  <text x="410" y="122" fill="#04222e" font-size="19" font-weight="bold" text-anchor="middle">Harness fino (~200 líneas)</text>
+  <text x="410" y="145" fill="#04222e" font-size="14" text-anchor="middle">ejecución · E/S de archivos · seguridad</text>
+
+  <!-- skills grandes -->
+  <g text-anchor="middle" font-size="15">
+    <rect x="120" y="190" width="180" height="90" rx="10" fill="#22c55e"/>
+    <text x="210" y="232" fill="#06210f" font-weight="bold">Skill A</text>
+    <text x="210" y="254" fill="#06210f" font-size="13">workflow + criterios</text>
+
+    <rect x="320" y="190" width="180" height="90" rx="10" fill="#22c55e"/>
+    <text x="410" y="232" fill="#06210f" font-weight="bold">Skill B</text>
+    <text x="410" y="254" fill="#06210f" font-size="13">workflow + criterios</text>
+
+    <rect x="520" y="190" width="180" height="90" rx="10" fill="#22c55e"/>
+    <text x="610" y="232" fill="#06210f" font-weight="bold">Skill C</text>
+    <text x="610" y="254" fill="#06210f" font-size="13">workflow + criterios</text>
+  </g>
+
+  <!-- cron -->
+  <rect x="120" y="310" width="580" height="60" rx="12" fill="#f59e0b"/>
+  <text x="410" y="346" fill="#1a1100" font-size="17" font-weight="bold" text-anchor="middle">Capa cron → las skills se ejecutan de forma autónoma y programada</text>
+
+  <text x="410" y="405" fill="#9bb4d0" font-size="15" text-anchor="middle">La inteligencia vive en las skills; el harness solo orquesta</text>
+</svg>

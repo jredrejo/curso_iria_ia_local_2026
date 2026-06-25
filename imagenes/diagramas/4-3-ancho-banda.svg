@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="500" fill="#0a1626"/>
+  <text x="450" y="46" fill="#ffffff" font-size="27" font-weight="bold" text-anchor="middle">Ancho de banda de memoria (GB/s)</text>
+  <text x="450" y="76" fill="#5fb3ff" font-size="16" text-anchor="middle">En inferencia, más ancho de banda = más tokens/segundo</text>
+
+  <line x1="220" y1="120" x2="220" y2="430" stroke="#33506e" stroke-width="2"/>
+  <line x1="220" y1="430" x2="860" y2="430" stroke="#33506e" stroke-width="2"/>
+
+  <!-- escala: 1800 GB/s -> 300px ; factor 6 -->
+  <g font-size="15">
+    <!-- RTX PRO 6000 1800 -->
+    <rect x="240" y="130" width="120" height="300" fill="#22c55e"/>
+    <text x="300" y="120" fill="#fff" text-anchor="middle" font-weight="bold">1800</text>
+    <text x="300" y="452" fill="#cfe3ff" text-anchor="middle">RTX PRO 6000</text>
+
+    <!-- RTX 5090 1792 -->
+    <rect x="390" y="131" width="120" height="299" fill="#3b82f6"/>
+    <text x="450" y="121" fill="#fff" text-anchor="middle" font-weight="bold">1792</text>
+    <text x="450" y="452" fill="#cfe3ff" text-anchor="middle">RTX 5090</text>
+
+    <!-- Mac Studio 546 -->
+    <rect x="540" y="339" width="120" height="91" fill="#8b5cf6"/>
+    <text x="600" y="329" fill="#fff" text-anchor="middle" font-weight="bold">546</text>
+    <text x="600" y="452" fill="#cfe3ff" text-anchor="middle">Mac M4 Max</text>
+
+    <!-- Strix Halo 212 -->
+    <rect x="690" y="395" width="120" height="35" fill="#f59e0b"/>
+    <text x="750" y="385" fill="#fff" text-anchor="middle" font-weight="bold">212</text>
+    <text x="750" y="452" fill="#ffe6b3" text-anchor="middle">AMD Strix Halo</text>
+  </g>
+
+  <text x="450" y="485" fill="#9bb4d0" font-size="15" text-anchor="middle">Apple Silicon ofrece el mejor precio por GB/s · fuente: Julien Simon (abr. 2026)</text>
+</svg>

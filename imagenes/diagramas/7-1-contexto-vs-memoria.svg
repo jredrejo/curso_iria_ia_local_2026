@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="380" fill="#0a1626"/>
+  <text x="450" y="46" fill="#ffffff" font-size="26" font-weight="bold" text-anchor="middle">El contexto no es memoria</text>
+
+  <!-- pizarra -->
+  <rect x="70" y="100" width="320" height="200" rx="10" fill="#1f3a52" stroke="#33506e" stroke-width="3"/>
+  <text x="230" y="140" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">Ventana de contexto</text>
+  <text x="230" y="172" fill="#9bb4d0" font-size="15" text-anchor="middle">una pizarra...</text>
+  <text x="230" y="200" fill="#9bb4d0" font-size="15" text-anchor="middle">que se borra en</text>
+  <text x="230" y="224" fill="#9bb4d0" font-size="15" text-anchor="middle">cada sesión</text>
+  <text x="230" y="270" fill="#ef4444" font-size="30" text-anchor="middle">✗ se olvida</text>
+
+  <text x="450" y="210" fill="#5fb3ff" font-size="40" text-anchor="middle">→</text>
+
+  <!-- biblioteca / RAG -->
+  <rect x="510" y="100" width="320" height="200" rx="10" fill="#0f3d2e" stroke="#22c55e" stroke-width="3"/>
+  <text x="670" y="140" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">RAG = memoria externa</text>
+  <text x="670" y="172" fill="#bbf7d0" font-size="15" text-anchor="middle">una biblioteca...</text>
+  <text x="670" y="200" fill="#bbf7d0" font-size="15" text-anchor="middle">persistente que el modelo</text>
+  <text x="670" y="224" fill="#bbf7d0" font-size="15" text-anchor="middle">consulta antes de responder</text>
+  <text x="670" y="270" fill="#22c55e" font-size="30" text-anchor="middle">✓ recuerda</text>
+
+  <text x="450" y="350" fill="#9bb4d0" font-size="16" text-anchor="middle">Respuestas basadas en TUS datos, sin reentrenar el modelo</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="820" height="470" fill="#0a1626"/>
+  <text x="410" y="50" fill="#ffffff" font-size="28" font-weight="bold" text-anchor="middle">Lo que SÍ puedes hacer en local hoy</text>
+
+  <g font-size="19" fill="#e8f1ff">
+    <text x="120" y="120" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="120">Programar con un copiloto privado en VS Code</text>
+    <text x="120" y="170" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="170">Chatear y analizar imágenes/documentos (multimodal)</text>
+    <text x="120" y="220" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="220">Montar un RAG sobre tus propios documentos</text>
+    <text x="120" y="270" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="270">Ejecutar agentes que editan código y corren tests</text>
+    <text x="120" y="320" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="320">Tener un asistente persistente con memoria</text>
+    <text x="120" y="370" fill="#22c55e" font-size="24">✓</text>
+    <text x="155" y="370">Construir tu segundo cerebro en Markdown</text>
+  </g>
+
+  <text x="410" y="435" fill="#5fb3ff" font-size="17" text-anchor="middle">Privacidad + coste cero + offline + control = soberanía sobre tu IA</text>
+</svg>

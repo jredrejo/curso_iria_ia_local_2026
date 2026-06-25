@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1040" height="360" fill="#0a1626"/>
+  <text x="520" y="48" fill="#ffffff" font-size="28" font-weight="bold" text-anchor="middle">Pipeline RAG: Embed → Store → Retrieve → Generate</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5fb3ff"/>
+    </marker>
+  </defs>
+
+  <g text-anchor="middle" font-size="15">
+    <rect x="30"  y="150" width="150" height="80" rx="10" fill="#3b82f6"/>
+    <text x="105" y="185" fill="#fff">Documentos</text>
+    <text x="105" y="207" fill="#cfe3ff" font-size="13">(chunking)</text>
+
+    <rect x="230" y="150" width="150" height="80" rx="10" fill="#6366f1"/>
+    <text x="305" y="185" fill="#fff">Embeddings</text>
+    <text x="305" y="207" fill="#dfe3ff" font-size="13">texto → vector</text>
+
+    <rect x="430" y="150" width="150" height="80" rx="10" fill="#8b5cf6"/>
+    <text x="505" y="183" fill="#fff">Vector DB</text>
+    <text x="505" y="205" fill="#e9ddff" font-size="13">Chroma/Qdrant</text>
+
+    <rect x="630" y="150" width="150" height="80" rx="10" fill="#f59e0b"/>
+    <text x="705" y="185" fill="#1a1100">Retrieval</text>
+    <text x="705" y="207" fill="#3a2900" font-size="13">trozos cercanos</text>
+
+    <rect x="830" y="150" width="170" height="80" rx="10" fill="#22c55e"/>
+    <text x="915" y="183" fill="#06210f">Generate</text>
+    <text x="915" y="205" fill="#06210f" font-size="13">LLM responde</text>
+  </g>
+
+  <g stroke="#5fb3ff" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="180" y1="190" x2="225" y2="190"/>
+    <line x1="380" y1="190" x2="425" y2="190"/>
+    <line x1="580" y1="190" x2="625" y2="190"/>
+    <line x1="780" y1="190" x2="825" y2="190"/>
+  </g>
+
+  <!-- pregunta -->
+  <rect x="630" y="60" width="150" height="50" rx="8" fill="#1f3a52"/>
+  <text x="705" y="91" fill="#cfe3ff" font-size="15" text-anchor="middle">Pregunta del usuario</text>
+  <line x1="705" y1="110" x2="705" y2="148" stroke="#5fb3ff" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <text x="520" y="310" fill="#9bb4d0" font-size="16" text-anchor="middle">Respuestas basadas en TUS documentos · sin reentrenar el modelo · todo local</text>
+</svg>

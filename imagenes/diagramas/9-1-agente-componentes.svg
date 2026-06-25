@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="760" height="560" fill="#0a1626"/>
+  <text x="380" y="48" fill="#ffffff" font-size="28" font-weight="bold" text-anchor="middle">Anatomía de un agente</text>
+
+  <!-- centro -->
+  <circle cx="380" cy="290" r="100" fill="#3b82f6"/>
+  <text x="380" y="285" fill="#fff" font-size="24" font-weight="bold" text-anchor="middle">Agente</text>
+  <text x="380" y="312" fill="#cfe3ff" font-size="14" text-anchor="middle">LLM + bucle</text>
+
+  <!-- skills -->
+  <rect x="280" y="80" width="200" height="64" rx="12" fill="#22c55e"/>
+  <text x="380" y="112" fill="#06210f" font-size="18" font-weight="bold" text-anchor="middle">Skills</text>
+  <text x="380" y="132" fill="#06210f" font-size="13" text-anchor="middle">workflows en Markdown</text>
+  <line x1="380" y1="144" x2="380" y2="190" stroke="#5fb3ff" stroke-width="3"/>
+
+  <!-- MCP -->
+  <rect x="560" y="258" width="180" height="64" rx="12" fill="#f59e0b"/>
+  <text x="650" y="290" fill="#1a1100" font-size="18" font-weight="bold" text-anchor="middle">MCP</text>
+  <text x="650" y="310" fill="#3a2900" font-size="13" text-anchor="middle">datos y herramientas</text>
+  <line x1="560" y1="290" x2="480" y2="290" stroke="#5fb3ff" stroke-width="3"/>
+
+  <!-- loop -->
+  <rect x="20" y="258" width="180" height="64" rx="12" fill="#8b5cf6"/>
+  <text x="110" y="290" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Loop</text>
+  <text x="110" y="310" fill="#e9ddff" font-size="13" text-anchor="middle">decidir→actuar→observar</text>
+  <line x1="200" y1="290" x2="280" y2="290" stroke="#5fb3ff" stroke-width="3"/>
+
+  <!-- herramientas / harness -->
+  <rect x="280" y="440" width="200" height="64" rx="12" fill="#0ea5e9"/>
+  <text x="380" y="472" fill="#04222e" font-size="18" font-weight="bold" text-anchor="middle">Harness</text>
+  <text x="380" y="492" fill="#04222e" font-size="13" text-anchor="middle">ejecución + seguridad</text>
+  <line x1="380" y1="390" x2="380" y2="440" stroke="#5fb3ff" stroke-width="3"/>
+</svg>
